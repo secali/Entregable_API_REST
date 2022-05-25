@@ -29,21 +29,26 @@ INSTALLED_APPS = [
 Una app es un paquete en pyhon con una funcionalidad
 
 ____________________________________________________________________
+
 Para generar nueva app: python manage.py startapp miApp
 Aparecera una nueva carpeta en el proyecto con el nombre de la app y otros ficheros
 
-_____________________________________________________________________cd
+_____________________________________________________________________
+
 Las vistas se trabajan en views.py (dentro de cada app)
 
 ______________________________________________________________
+
 Para las vistas, la idea es tener una layout y gracias a la sintaxis especial
 que añade en html, puedo indicar los trozos de codigo html que van cambiando
 en mi layout, dependiendo de la vista en la que me encuentre
 
 ____________________________________________________________________
+
 Crear carpeta statics para meter css e imagenes y luego cargarla en el layout.html
 con  href="{%static 'css/styles.css'%}
 ____________________________________________________________________ 
+
 Recomendado usar virtual environment, mas info: https://docs.python.org/3/library/venv.html
 Recomendado usar generador para .gitignore, más info: https://www.toptal.com/developers/gitignore
 
