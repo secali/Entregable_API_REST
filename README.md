@@ -44,12 +44,6 @@ _____________________________________________________________________
 
 Las vistas se trabajan en views.py (dentro de cada app)
 
-______________________________________________________________
-
-Para las vistas, la idea es tener una layout y gracias a la sintaxis especial
-que añade en html, puedo indicar los trozos de codigo html que van cambiando
-en mi layout, dependiendo de la vista en la que me encuentre
-
 ____________________________________________________________________
 
 Crear carpeta statics para meter css e imagenes y luego cargarla en el layout.html
