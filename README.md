@@ -19,11 +19,17 @@ ______________________________________________________________
 Dentro de settings.py tenemos diferentes apps en nuestro projecto, cada una hace una cosa diferente:
 INSTALLED_APPS = [
     'django.contrib.admin',        ------> Panel de administracion
+    
     'django.contrib.auth',         ------> Autenticacion
+    
     'django.contrib.contenttypes',
+    
     'django.contrib.sessions',
+    
     'django.contrib.messages',
+    
     'django.contrib.staticfiles',
+    
 ]
 
 Una app es un paquete en pyhon con una funcionalidad
