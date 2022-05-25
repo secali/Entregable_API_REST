@@ -27,7 +27,7 @@ class EntryListAPI(APIView):
 class EntryDetailAPI(APIView):
     def get_entry(self, request, pk):
         entries = get_object_or_404(entryModel, pk=pk)
-        #self.check_object_permissions(request, entries)
+        self.check_object_permissions(request, entries)
         return entries
     
     def get(self, request, pk):
@@ -42,7 +42,7 @@ class EntryDetailAPI(APIView):
         #user = User.object.get(pk=pk)
         entries = get_object_or_404(entryModel, pk=pk)
 
-        #self.check_object_permissions(request, entries)
+        self.check_object_permissions(request, entries)
 
         serializer = EntrySerializer(instance=entries, data=request.data)
         if serializer.is_valid():
@@ -56,7 +56,7 @@ class EntryDetailAPI(APIView):
 
         entries = get_object_or_404(entryModel, pk=pk)
 
-        #self.check_object_permissions(request, user)
+        self.check_object_permissions(request, entries)
 
         entries.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
