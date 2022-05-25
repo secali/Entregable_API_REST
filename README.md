@@ -18,6 +18,7 @@ Ejecutar server con: python manage.py runserver
 ______________________________________________________________
 Dentro de settings.py tenemos diferentes apps en nuestro projecto, cada una hace una cosa diferente:
 INSTALLED_APPS = [
+
     'django.contrib.admin',        ------> Panel de administracion
     
     'django.contrib.auth',         ------> Autenticacion
